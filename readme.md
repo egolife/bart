@@ -2,9 +2,11 @@
 
 - git clone https://github.com/egolife/bart.git
 - cd bart
-- composer install
+- cp .env.example .env
+- php artisan key:generate
 - Создать базу
 - Прописать доступы к базе в .env
+- composer install
 - php artisan migrate
 - Настроить web-server или запустить php artisan serve
 - Открыть в браузере страницу localhost:8000
